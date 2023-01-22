@@ -19,7 +19,7 @@ int ev_print_func(const char *s, int index)
 	{
 		if (s[index] == pr[i].type_arg[j])
 		{
-			if (pr[i].type_arg[j + 1 != '\0')
+			if (pr[i].type_arg[j + i] != '\0')
 				index++, j++;
 			else
 				break;
