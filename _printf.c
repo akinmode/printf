@@ -42,7 +42,8 @@ int _printf(const char *format, ...)
 		}
 		else
 			handl_buf(buffer, format[i], ibuf), len++;
-		for (ibuf = len; ibuf > 1024; ibuf -= 1024);
+		for (ibuf = len; ibuf > 1024; ibuf -= 1024)
+			;
 	}
 	print_buf(buffer, ibuf), free(buffer), va_end(args);
 	return (len);
