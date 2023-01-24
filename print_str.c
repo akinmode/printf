@@ -19,7 +19,7 @@ int print_str(va_list args, char *buf, unsigned int ibuf)
 	{
 		for (i = 0; nill[i]; i++)
 			ibuf = handl_buf(buf, nill[i], ibuf);
-		return (6);
+		return (-1);
 	}
 	for (i = 0; str[i]; i++)
 		ibuf = handl_buf(buf, str[i], ibuf);

@@ -30,6 +30,8 @@ int print_str(va_list args, char *buf, unsigned int ibuf);
 
 int print_int(va_list args, char *buf, unsigned int ibuf);
 
+int print_unint(va_list args, char *buf, unsigned int ibuf);
+
 int print_bnr(va_list args, char *buf, unsigned int ibuf);
 
 int print_unt(va_list args, char *buf, unsigned int ibuf);
