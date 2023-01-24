@@ -26,7 +26,7 @@ int print_int(va_list args, char *buf, unsigned int ibuf)
 		int_in = int_input;
 	}
 
-	int_tempt = int_in;
+	int_temp = int_in;
 	div = 1;
 
 	while (int_temp > 9)
