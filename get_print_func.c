@@ -15,6 +15,11 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 		{"b", print_bnr}, {"u", print_unt},
 		{"o", print_oct}, {"x", print_hex},
 		{"X", print_upx}, {"S", print_usr},
+		{"+i", prinpint}, {"+d", prinpint},
+		{"+u", print_unt}, {"+o", print_oct},
+		{"+x", print_hex}, {"+X", print_upx},
+		{" +i", prinpint}, {" +d", prinpint},
+		{"+ i", prinpint}, {"+ d", prinpint},
 		{"p", print_add}, {"%", print_prg},
 		{" %", print_prg}, {NULL, NULL},
 	};
