@@ -48,6 +48,8 @@ int print_add(va_list args, char *buf, unsigned int ibuf);
 
 int prinpint(va_list args, char *buf, unsigned int ibuf);
 
+int prinsint(va_list args, char *buf, unsigned int ibuf);
+
 int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int);
 
 int ev_print_func(const char *s, int index);
