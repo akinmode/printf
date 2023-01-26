@@ -23,6 +23,9 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 		{" i", prinsint}, {" d", prinsint},
 		{" u", print_unt}, {" o", print_oct},
 		{" x", print_hex}, {" X", print_upx},
+		{"#o", prinnoct}, {"#x", prinnhex},
+		{"#X", prinnupx}, {"#i", print_int},
+		{"#d", print_int}, {"#u", print_unt},
 		{"p", print_add}, {"%", print_prg},
 		{" %", print_prg}, {NULL, NULL},
 	};
