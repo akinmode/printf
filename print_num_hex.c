@@ -34,7 +34,7 @@ int prinnhex(va_list args, char *buf, unsigned int ibuf)
 	hexadecimal = fill_hex_array(binary, hexadecimal, 0, 8);
 	for (first_digit = i = count = 0; hexadecimal[i]; i++)
 	{
-		if (hexadecima[i] != '0' && first_digit == 0)
+		if (hexadecimal[i] != '0' && first_digit == 0)
 			first_digit = 1;
 		if (first_digit)
 		{
